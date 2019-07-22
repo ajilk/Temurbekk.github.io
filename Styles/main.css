@@ -1,13 +1,35 @@
-header{
-    background-color: #2D2B2B;
-    text-decoration: none;
-
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
 }
-body{
-    color: black;
-
+html, body{
+    font-family: Bebas Neue;
+    font-size: 14px;
+    font-weight: normal;
+    height: 100%;
+    background: url(../Assets/Computer.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-h3{
-    color: white;
+.name{
+    font-family: Bebas Neue;
+    width: 550px;
+    margin-top: 150px;
+    text-align: right;
+    margin-left: 15px;
+}
+
+.name h5{
+    color: red;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.name h1{
+    color: #fff;
+    font-size: 110px;
+    line-height: 88px;
+    letter-spacing: 5px;
+    
 }

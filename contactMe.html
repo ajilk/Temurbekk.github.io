@@ -1,9 +1,16 @@
 <head>
     <title>Contact Me</title>
     <link rel="stylesheet" href="Styles/contactMe.css">
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+
 </head>
 
 <div class="container">
+    <div w3-include-html="header.html"></div>
+
+        <script>
+            w3IncludeHTML();
+        </script>
         <form action="action_page.php">
       
           <label for="fname">First Name</label>
@@ -19,3 +26,5 @@
       
         </form>
       </div>
+      
+    

@@ -3,23 +3,32 @@
 
 <head>
     <title>Temurbek Sabirov</title>
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
     <link rel="stylesheet" type="text/css" href="Styles/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
 </head>
 
 <body>
-    <div>
-        <div id="header">
-            <h1>Temurbek</h1>
-            <h3><a href="aboutMe.html">About me</a></h3>
-            <h3><a href="projects.html">Projects</a></h3>
-            <h3><a href="contactMe.html">Contact Me</a></h3>
+
+    <div w3-include-html="header.html"></div>
+
+    <script>
+        w3IncludeHTML();
+    </script>
+
+    <div class="wrapper">
+        <div class="name animated fadeInLeftBig">
+            <h5>Software Developer/Photographer</h5>
+            <h1>Temurbek <br> Sabirov</h1>
         </div>
-        <div id="content">
-            <div></div>
-        </div>
-        <div id="image"></div>
     </div>
 
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        w3IncludeHTML();
+    </script>
 </body>
 
 </html>
