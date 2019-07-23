@@ -1,9 +1,9 @@
 body {
     /* Typography Declarations */
-    color: #222222;
+    color: whitesmoke;
     font-size: 1em;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    background-image: url
+    background-color: #101010
 }
 
 .content-footer,
@@ -26,6 +26,7 @@ body {
     /* Typography Declarations */
     font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 2em;
+    user-select: none;
 }
 
 .masthead-heading {
@@ -38,6 +39,7 @@ body {
     font-size: 6em;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+    user-select: none;
 }
 
 .introduction-section,

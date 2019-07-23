@@ -1,35 +1,38 @@
 *{
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
 }
 html, body{
-    font-family: Bebas Neue;
+    font-family: 'Kavivanar';
     font-size: 14px;
     font-weight: normal;
     height: 100%;
-    background: url(../Assets/Computer.jpg) no-repeat;
-    background-size: cover;
+    background: url(../Assets/portrait.jpg) no-repeat;
+    background-size: 1500px 1000px;
     background-attachment: fixed;
+    background-position: top;
 }
 
 .name{
-    font-family: Bebas Neue;
-    width: 550px;
+    font-family: 'Kavivanar';
+    width: 450px;
+
     margin-top: 150px;
     text-align: right;
-    margin-left: 15px;
+    margin-right: 15px;
+    margin-left: 60%;
+    user-select: none;
 }
 
-.name h5{
+.name h4{
     color: red;
     font-size: 20px;
     letter-spacing: 5px;
 }
 .name h1{
     color: #fff;
-    font-size: 110px;
-    line-height: 88px;
+    font-size: 80px;
+    line-height: 110px;
     letter-spacing: 5px;
     
 }

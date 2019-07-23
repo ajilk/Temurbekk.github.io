@@ -3,15 +3,18 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    user-select: none;
 }
 
 .header{
+    text-decoration: none; 
     width: 100%;
     height: 80px;
     display: block;
     background-color: 101010;
 }
 .inner_header{
+    text-decoration: none;
     width: 90%;
     height: 100%;
     display: block;
@@ -19,7 +22,9 @@
 }
 
 .logo_container{
-    height: 100%;
+    text-decoration: none;
+    width: 150px;
+    height: 100px;;
     display: table;
     float: left;
 }
@@ -30,8 +35,9 @@
     height: 100%;
     display: table-cell;
     vertical-align: bottom;
-    font-family: 'Great Vibes', cursive;
+    font-family: Great Vibes, cursive;
     font-size: 48px;
+    line-height: 200px;
 }
 .logo_container h1:hover{
     color: red;
