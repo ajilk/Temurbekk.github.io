@@ -4,19 +4,48 @@
         
         <title>About Me</title>
         <link rel="stylesheet" href="Styles/aboutMe.css">
+        <link rel="stylesheet" href="Styles/_header.css">
         <p class='masthead-intro'>Greetings, name is</p>
         <h1 class='masthead-heading'>Temurbek <br> Sabirov!</h1>
         <script src="https://www.w3schools.com/lib/w3data.js"></script>
+        <link rel="stylesheet" href="Styles/_header.css">
+    <link rel="stylesheet" href="Styles/_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" hreif="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         
 
     </header>
 
 <body>
-        <div w3-include-html="header.html"></div>
-
-        <script>
-            w3IncludeHTML();
-        </script>
+        <div class="header">
+                <div class="inner_header animated fadeInDownBig">
+                    <div class="logo_container" >
+                        <!-- <a href="https://temurbekk.github.io/"><h1>Temurbek</h1></a> -->
+                        <a href="index.html"><h1>Temurbek</h1></a>  
+                    </div>
+                    
+                    <ul class="navigation">
+                        <a href="about-me.html"><li>About</li></a>
+                        <a href="contact-me.html"><li>Contact</li></a>
+                        <div class="dropdown">
+                                <li><button class="dropbtn">Projects</button></li>
+                                <div class="dropdown-content">
+                                    <ul>
+                                        <a href="photography-projects.html">Photography</a>
+                                        <a href="programming-projects.html">Programming</a>
+        
+                                    </ul>
+                                  
+                                </div>
+                              </div>
+                       
+                    </ul>
+                </div>
+            </div>
 
         
     <section class="introduction-section">
@@ -63,11 +92,15 @@
         <i class="fa fa-instagram fa-4x icon-3d"></i>
         <i class="fa fa-linkedin fa-4x icon-3d"></i>
     </div>
-    
+    <div class="middle animated fadeInUpBig">
+            <a class="btn" href="https://www.linkedin.com/in/temurbeksabirov">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="btn" href="https://www.instagram.com/imtemurbek/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="btn" href="https://github.com/Temurbekk">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
 </body>
-
-<div w3-include-html="footer.html"></div>
-
-        <script>
-            w3IncludeHTML();
-        </script>
