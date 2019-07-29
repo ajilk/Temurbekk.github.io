@@ -1,0 +1,43 @@
+@import url("_header.css");
+@import url("_footer.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: none;
+}
+html, body{
+    font-family: 'Kavivanar';
+    font-size: 14px;
+    font-weight: normal;
+    height: 100%;
+    background: url(../Assets/portrait2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+
+.name{
+    font-family: 'Kavivanar';
+    width: 450px;
+
+    margin-top: 150px;
+    text-align: right;
+    margin-right: 15px;
+    margin-left: 60%;
+    user-select: none;
+}
+
+.name h4{
+    color: red;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.name h1{
+    color: #fff;
+    font-size: 80px;
+    line-height: 110px;
+    letter-spacing: 5px;
+    
+}

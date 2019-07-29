@@ -4,12 +4,17 @@
     <link rel="stylesheet" href="Styles/contactMe.css">
   </head>
   <body>
+      <div w3-include-html="header2.html"></div>
+
+      <script>
+          w3IncludeHTML();
+      </script>   
     <div class="contact-title">
       <h1>Contact me</h1>
       <h2>Any questions or concerns?</h2>
     </div>
     <div class="contact-form">
-      <form id="contact-form" method="post" action="contact-handler.php">
+      <form id="contact-form" method="POST" action="https://formspree.io/prodota150@gmail.com">
         <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
         <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
         <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>

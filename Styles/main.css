@@ -1,6 +1,10 @@
+@import url("_header.css");
+@import url("_footer.css");
+
 *{
     margin: 0;
     padding: 0;
+    background-color: none;
 }
 html, body{
     font-family: 'Kavivanar';
@@ -8,7 +12,7 @@ html, body{
     font-weight: normal;
     height: 100%;
     background: url(../Assets/portrait2.jpg) no-repeat;
-    background-size: 1500px 1000px;
+    background-size: cover;
     background-attachment: fixed;
     background-position: top;
 }

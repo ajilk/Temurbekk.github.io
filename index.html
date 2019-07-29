@@ -4,10 +4,8 @@
 <head>
     <title>Temurbek Sabirov</title>
     <link href="https://fonts.googleapis.com/css?family=Kavivanar&display=swap" rel="stylesheet">
-    <!-- <script src="https://www.w3schools.com/lib/w3data.js"></script> -->
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
     <link rel="stylesheet" type="text/css" href="Styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/_header.css">
-    <link rel="stylesheet" type="text/css" href="Styles/_footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -18,31 +16,11 @@
 
 <body>
 
-        <div class="header">
-                <div class="inner_header animated fadeInDownBig">
-                    <div class="logo_container" >
-                        <!-- <a href="https://temurbekk.github.io/"><h1>Temurbek</h1></a> -->
-                        <a href="index.html"><h1>Temurbek</h1></a>  
-                    </div>
-                    
-                    <ul class="navigation">
-                        <a href="about-me.html"><li>About</li></a>
-                        <a href="contact-me.html"><li>Contact</li></a>
-                        <div class="dropdown">
-                                <li><button class="dropbtn">Projects</button></li>
-                                <div class="dropdown-content">
-                                    <ul>
-                                        <a href="photography-projects.html">Photography</a>
-                                        <a href="programming-projects.html">Programming</a>
-        
-                                    </ul>
-                                  
-                                </div>
-                              </div>
-                       
-                    </ul>
-                </div>
-            </div>
+        <div w3-include-html="header2.html"></div>
+
+        <script>
+            w3IncludeHTML();
+        </script>   
 
     <div class="wrapper">
         <div class="name animated fadeInRightBig">
@@ -51,25 +29,15 @@
         </div>
     </div>
 
+    <div w3-include-html="footer.html"></div>
 
-    <div class="middle animated fadeInUpBig">
-            <a class="btn" href="https://www.linkedin.com/in/temurbeksabirov">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a class="btn" href="https://www.instagram.com/imtemurbek/">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a class="btn" href="https://github.com/Temurbekk">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
+    <script>
+        w3IncludeHTML();
+    </script>
+    
 
 </body>
 
-<div w3-include-html="footer.html"></div>
 
-<script>
-    w3IncludeHTML();
-</script>
 
 </html>
