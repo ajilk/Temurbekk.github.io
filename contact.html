@@ -5,7 +5,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-    <title>Temurbek Sabirov</title>
+    <title>Contact</title>
     <meta name="description" content="">	
 	<meta name="author" content="">
 
@@ -53,7 +53,7 @@
 
 </head>
 	
-<body style="background-color: #101010">
+<body>
 	<div class="body-inner">
 	<!-- Header start -->
 	<header id="header" class="navbar-fixed-top header2" role="banner">
@@ -96,16 +96,17 @@
 				</div><!--/ Row end -->
 			</div><!--/ Container end -->
 		</header><!--/ Header end -->
-
+	
 	<div id="banner-area">
-		<img src="images/banner/banner2.jpg" alt ="" />
+		<img src="images/banner/Contact.jpg" alt ="" />
 		<div class="parallax-overlay"></div>
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>404 Error Page</h2>
+		        	<h2>Contact me</h2>
 		        	<ul class="breadcrumb">
 			            <li><a href="index.html">Home</a></li>
+			            <li><a href="contact.html"> Contact</a></li>
 		          	</ul>
 	          	</div>
           	</div><!-- Subpage title end -->
@@ -115,23 +116,45 @@
 
 	<section id="main-container" style="background-color: #101010">
 		<div class="container">
-			<div class="error-page text-center">
-				<div class="error-code">
-					<strong>404</strong>
-				</div>
-				<div class="error-message">
-					<h3>Oops... Page Not Found!</h3>
-				</div>
-				<div class="error-body">
-					Try using the button below to go to main page of the site <br/>
-					<a href="index.html" class="btn btn-primary solid blank"><i class="fa fa-arrow-circle-left">&nbsp;</i> Go to Home</a>
-				</div>
-			</div>
-		</div>
-	</section><!--/ Main container end -->
+			<div class="row">
+	    		<div class="col-md-7">
+	    			<form id="contact-form" action="https://formspree.io/prodota150@gmail.com" method="post" role="form">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Name</label>
+								<input class="form-control" name="name" id="name" placeholder="" type="text" required>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Email</label>
+									<input class="form-control" name="email" id="email" 
+									placeholder="" type="email" required>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Subject</label>
+									<input class="form-control" name="subject" id="subject" 
+									placeholder="" required>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Message</label>
+							<textarea class="form-control" name="message" id="message" placeholder="" rows="10" required></textarea>
+						</div>
+						<div class="text-right"><br>
+							<button class="btn btn-primary solid blank" type="submit">Send Message</button> 
+						</div>
+					</form>
+	    		</div>
+	    	</div>
 
-	
-	
+		</div><!--/ container end -->
+
+	</section><!--/ Main container end -->
 
 	<!-- Footer start -->
 	<section id="copyright" class="copyright angle">
@@ -140,15 +163,15 @@
 					<div class="col-md-12 text-center">
 						<ul class="footer-social unstyled">
 							<li>
-								<a title="linkedin" href="https://www.linkedin.com/in/temurbeksabirov">
-									<span class="icon-pentagon wow bounceIn"><i class="fa fa-linkedin"></i></span>
-								</a>
-								<a title="github" href="https://github.com/Temurbekk">
-									<span class="icon-pentagon wow bounceIn"><i class="fa fa-github"></i></span>
-								</a>
-								<a title="instagram" href="https://www.instagram.com/imtemurbek/">
-									<span class="icon-pentagon wow bounceIn"><i class="fa fa-instagram"></i></span>
-								</a>
+									<a title="linkedin" href="https://www.linkedin.com/in/temurbeksabirov">
+										<span class="icon-pentagon wow bounceIn"><i class="fa fa-linkedin"></i></span>
+									</a>
+									<a title="github" href="https://github.com/Temurbekk">
+										<span class="icon-pentagon wow bounceIn"><i class="fa fa-github"></i></span>
+									</a>
+									<a title="instagram" href="https://www.instagram.com/imtemurbek/">
+										<span class="icon-pentagon wow bounceIn"><i class="fa fa-instagram"></i></span>
+									</a>
 							</li>
 						</ul>
 					</div>
@@ -195,6 +218,33 @@
 	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
 	<!-- Waypoints -->
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
+
+	<!-- Google Map API Key Source -->
+	<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+	<!-- Doc https://developers.google.com/maps/documentation/javascript/get-api-key -->
+	<script type="text/javascript" src="js/gmap3.js"></script>
+
+	<script type="text/javascript">
+
+		$(function () {
+	       $('#map')
+	         .gmap3({
+	           address:"14600 Goldenwest St #101A, Westminster, California 92683",
+	           zoom: 17,
+	           mapTypeId : google.maps.MapTypeId.ROADMAP,
+	           scrollwheel: false
+	         })
+	         .marker(function (map) {
+	           return {
+	             position: map.getCenter(),
+	             icon: 'http://themewinter.com/html/marker.png'
+	           };
+	         });
+	     });
+
+	</script>
+
+	
 	<!-- Template custom -->
 	<script type="text/javascript" src="js/custom.js"></script>
 	</div><!-- Body inner end -->

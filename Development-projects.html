@@ -5,7 +5,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-    <title>Temurbek Sabirov</title>
+    <title>Dev-projects</title>
     <meta name="description" content="">	
 	<meta name="author" content="">
 
@@ -53,7 +53,24 @@
 
 </head>
 	
-<body style="background-color: #101010">
+<body>
+    <!-- Style switcher start -->
+	<div class="style-switch-wrapper">
+            <div class="style-switch-button">
+                <i class="fa fa-sliders"></i>
+            </div>
+            <h3>Style Options</h3>
+            <button id="preset1" class="btn btn-sm btn-primary"></button>
+            <button id="preset2" class="btn btn-sm btn-primary"></button>
+            <button id="preset3" class="btn btn-sm btn-primary"></button>
+            <button id="preset4" class="btn btn-sm btn-primary"></button>
+            <button id="preset5" class="btn btn-sm btn-primary"></button>
+            <button id="preset6" class="btn btn-sm btn-primary"></button>
+            <br/><br/>
+            <a class="btn btn-sm btn-primary close-styler pull-right">Close X</a>
+        </div>
+        <!-- Style switcher end -->
+        
 	<div class="body-inner">
 	<!-- Header start -->
 	<header id="header" class="navbar-fixed-top header2" role="banner">
@@ -97,41 +114,64 @@
 			</div><!--/ Container end -->
 		</header><!--/ Header end -->
 
+
 	<div id="banner-area">
-		<img src="images/banner/banner2.jpg" alt ="" />
+		<img src="images/banner/Programming-banner.jpg" alt ="banner" />
 		<div class="parallax-overlay"></div>
 			<!-- Subpage title start -->
 			<div class="banner-title-content">
 	        	<div class="text-center">
-		        	<h2>404 Error Page</h2>
+		        	<h2>Portfolio</h2>
 		        	<ul class="breadcrumb">
 			            <li><a href="index.html">Home</a></li>
+			            <li><a href="Development-projects.html"> Programming Portfolio</a></li>
 		          	</ul>
 	          	</div>
           	</div><!-- Subpage title end -->
 	</div><!-- Banner area end -->
 
-	<!-- Main container start -->
-
-	<section id="main-container" style="background-color: #101010">
+	
+	<!-- Portfolio start -->
+	<section id="main-container" class="portfolio-static" style="background-color: #101010">
 		<div class="container">
-			<div class="error-page text-center">
-				<div class="error-code">
-					<strong>404</strong>
-				</div>
-				<div class="error-message">
-					<h3>Oops... Page Not Found!</h3>
-				</div>
-				<div class="error-body">
-					Try using the button below to go to main page of the site <br/>
-					<a href="index.html" class="btn btn-primary solid blank"><i class="fa fa-arrow-circle-left">&nbsp;</i> Go to Home</a>
-				</div>
-			</div>
-		</div>
-	</section><!--/ Main container end -->
+			<div class="row">
+				<div class="col-sm-3 portfolio-static-item">
+					<div class="grid">
+						<figure class="effect-oscar">
+							<img src="images/logo.png" alt="website">
+							<figcaption>
+								<a class="link icon-pentagon" href="index.html"><i class="fa fa-link"></i></a>
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/website-screenshot.png"><i class="fa fa-search"></i></a>            
+							</figcaption>			
+						</figure>
+						<div class="portfolio-static-desc">
+							<h3>Personal Website</h3>
+							<span><a href="#">Where you can find my portfolio</a></span>
+						</div>					
+					</div><!--/ grid end -->
+				</div><!--/ item 1 end -->
 
-	
-	
+				<div class="col-sm-3 portfolio-static-item">
+					<div class="grid">
+						<figure class="effect-oscar">
+							<img src="images/portfolio/TicTacToe.png" alt="">
+							<figcaption>
+								<a class="link icon-pentagon" href="https://github.com/Temurbekk/TicTacToe"><i class="fa fa-link"></i></a>
+								<a class="view icon-pentagon" data-rel="prettyPhoto" href="images/portfolio/TicTacToe.png"><i class="fa fa-search"></i></a>            
+							</figcaption>			
+						</figure>
+						<div class="portfolio-static-desc">
+							<h3>TicTacToe</h3>
+							<span><a href="#">Built using Swift</a></span>
+						</div>					
+					</div><!--/ grid end -->
+				</div><!--/ item 2 end -->
+					
+			</div><!-- Content row end -->
+		</div><!-- Container end -->
+	</section><!-- Portfolio end -->
+
+
 
 	<!-- Footer start -->
 	<section id="copyright" class="copyright angle">
