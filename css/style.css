@@ -1,18 +1,4 @@
-/* Table of Content
-==================================================
-1.	Global Styles
-3. 	Common Styles
-4.	Header area
-7.	Image Block
-6.	About (Landing and Featured Tab)
-9.	Portfolio
-14. Video block
-15.	Recent Post
-19. Footer
-20. Copyright
-22. Blog
-23. Landing page
-*/
+
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
@@ -1188,7 +1174,7 @@ ul.navbar-nav > li > a i{
 
 
 
-/* About us
+/* About me
 ================================================== */
 
 
@@ -1982,7 +1968,7 @@ figure.effect-oscar:hover img {
 }
 
 
-/* Footer about us */
+/* Footer about me */
 
 .footer-about-us h4{
 	font-size: 16px;
@@ -2153,7 +2139,7 @@ ul.arrow li:before {
 	color: #ccc;
 }
 
-/* About Us */
+/* About me */
 
 .about-message{
 	background: #f4f4f4;
